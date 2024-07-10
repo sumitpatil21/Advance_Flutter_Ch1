@@ -1,6 +1,8 @@
-import 'package:advance_flutter_ch1/Dark&LightPage.dart';
-import 'package:advance_flutter_ch1/Stepper_Widget/StepperPage.dart';
+
+import 'package:advance_flutter_ch1/Screen/Provider&ChangeThemeusingProvider/Provider/Provider.dart';
+import 'package:advance_flutter_ch1/Screen/Provider&ChangeThemeusingProvider/View/Provider_Theme.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main()
 {
@@ -11,9 +13,15 @@ class MyAppCh1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Stepperpage(),
+    return ChangeNotifierProvider(
+      create: (context) => ProviderClass(),
+      builder: (context, child) => MaterialApp(
+        theme: ThemeData.light(),
+        darkTheme: ThemeData.dark(),
+        themeMode: Provider.of<ProviderClass>(context).IsDark?ThemeMode.light:ThemeMode.dark,
+        debugShowCheckedModeBanner: false,
+        home: ProviderTheme(),
+      ),
     );
   }
 }
