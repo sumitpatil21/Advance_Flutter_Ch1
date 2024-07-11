@@ -32,6 +32,48 @@ class BookingProvider with ChangeNotifier {
   }
 }
 ```
+## 1 State Management :
+
+- State management in Flutter is crucial for building responsive and dynamic applications.
+
+## 2 State :
+
+- A state is information that can be read when the widget is built and might change or modified over a lifetime of the app.
+
+## 3 SetState :
+
+- Rebuild the our stateful or stateless widget build method.
+
+## 4 Provider State Management :
+
+- Provider is a powerful state management solution in Flutter, offering a simple way to manage and share state across your application.
+
+## 5 Provider package :
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0  # Check for the latest version
+
+
+## 6 ChangeNotifier Class :
+
+- ChangeNotifier is a simple class, which provides change notification to its listeners.
+- It is easy to understand, implement, and optimized for a small number of listeners.
+- It is used for the listener to observe a model for changes.
+- In this, we only use the notifyListener() method to inform the listeners.
+
+## 7 ChangeNotifierProvider Widget :
+
+- ChangeNotifierProvider is the widget that provides an instance of a ChangeNotifier to its descendants. It comes from the provider package.
+- The following code snippets help to understand the concept of ChangeNotifierProvider.
+
+## 8 Consumer Widget :
+
+- It is a type of provider that does not do any fancy work.
+- It just calls the provider in a new widget and delegates its build implementation to the builder.
+
 
 https://github.com/sumitpatil21/Advance_Flutter_Ch1/assets/148967002/8c680c42-7111-43d9-bbd2-ca2014eb5886
 
