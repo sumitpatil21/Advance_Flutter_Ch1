@@ -1,6 +1,6 @@
 
-import 'package:advance_flutter_ch1/Screen/Provider&ChangeThemeusingProvider/Provider/Provider.dart';
-import 'package:advance_flutter_ch1/Screen/Provider&ChangeThemeusingProvider/View/Provider_Theme.dart';
+import 'package:advance_flutter_ch1/Screen/QuotesData/Provider/QuotesProvider.dart';
+import 'package:advance_flutter_ch1/Screen/QuotesData/View/QuotesDataView.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -14,13 +14,10 @@ class MyAppCh1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context) => ProviderClass(),
+      create: (context) => QuotesProvider(),
       builder: (context, child) => MaterialApp(
-        theme: ThemeData.light(),
-        darkTheme: ThemeData.dark(),
-        themeMode: Provider.of<ProviderClass>(context).IsDark?ThemeMode.light:ThemeMode.dark,
         debugShowCheckedModeBanner: false,
-        home: ProviderTheme(),
+        home: Quotesdataview(),
       ),
     );
   }
