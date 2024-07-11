@@ -35,3 +35,9 @@ class BookingProvider with ChangeNotifier {
 
 https://github.com/sumitpatil21/Advance_Flutter_Ch1/assets/148967002/8c680c42-7111-43d9-bbd2-ca2014eb5886
 
+## 1.5 Quotes Data Solving with Provider Video
+
+https://github.com/sumitpatil21/Advance_Flutter_Ch1/assets/148967002/56296965-8544-40bf-9fb8-0feb6b8944c9
+
+
+
