@@ -1,4 +1,5 @@
 
+import 'package:advance_flutter_ch1/Screen/OneTimeIntoScreen/View/OneTimeScreenView.dart';
 import 'package:advance_flutter_ch1/Screen/QuotesData/Provider/QuotesProvider.dart';
 import 'package:advance_flutter_ch1/Screen/QuotesData/View/QuotesDataView.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +18,7 @@ class MyAppCh1 extends StatelessWidget {
       create: (context) => QuotesProvider(),
       builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Quotesdataview(),
+        home: OnetimescreenPage(),
       ),
     );
   }

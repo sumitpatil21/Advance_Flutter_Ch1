@@ -100,6 +100,9 @@ Alert(context)
     actions: [
       TextButton(onPressed: () {
         quotefalse.addData();
+        txtquote.clear();
+        txtauthor.clear();
+        Navigator.of(context).pop();
       }, child:Text("Submit")),
       TextButton(onPressed: () {
         Navigator.of(context).pop();
