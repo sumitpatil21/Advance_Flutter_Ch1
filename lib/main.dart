@@ -1,7 +1,8 @@
 
 import 'package:advance_flutter_ch1/Screen/OneTimeIntoScreen/View/OneTimeScreenView.dart';
 import 'package:advance_flutter_ch1/Screen/QuotesData/Provider/QuotesProvider.dart';
-import 'package:advance_flutter_ch1/Screen/QuotesData/View/QuotesDataView.dart';
+import 'package:advance_flutter_ch1/Screen/contact_us_page/Provider/contact_us_page_Provider.dart';
+import 'package:advance_flutter_ch1/Screen/contact_us_page/View/contact_us_page_View.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -15,10 +16,10 @@ class MyAppCh1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context) => QuotesProvider(),
+      create: (context) => ContactUsPageProvider(),
       builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: OnetimescreenPage(),
+        home: ContactUsPage(),
       ),
     );
   }
