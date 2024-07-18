@@ -79,7 +79,80 @@ https://github.com/sumitpatil21/Advance_Flutter_Ch1/assets/148967002/8c680c42-71
 
 ## 1.5 Quotes Data Solving with Provider Video
 
+
 https://github.com/sumitpatil21/Advance_Flutter_Ch1/assets/148967002/56296965-8544-40bf-9fb8-0feb6b8944c9
+
+## Contact Us Page With Interaction
+
+```dart
+ void phone ()
+  {
+    Uri uri =Uri.parse("tel:+91 9316925877");
+    launchUrl(uri,mode: LaunchMode.externalApplication);
+  }
+  void sms ()
+  {
+    Uri uri =Uri.parse("sms:+91 9316925877");
+    launchUrl(uri,mode: LaunchMode.externalApplication);
+  }
+  void github()
+  {
+    Uri uri =Uri.parse("https://github.com/sumitpatil21");
+    launchUrl(uri,mode: LaunchMode.externalApplication);
+  }
+  void instagram ()
+  {
+    Uri uri =Uri.parse("https://www.instagram.com/");
+    launchUrl(uri,mode: LaunchMode.externalApplication);
+  }
+  void Mail ()
+  {
+    Uri uri =Uri.parse("mailto:namesam927@gmail.com");
+    launchUrl(uri,mode: LaunchMode.externalApplication);
+  }
+  void Linkdin ()
+  {
+    Uri uri =Uri.parse("https://www.linkedin.com/in/sumit-patil-4b7a63311/");
+    launchUrl(uri,mode: LaunchMode.externalApplication);
+  }
+```
+
+https://github.com/user-attachments/assets/973605ac-795f-4c26-a18f-ec7dea528d1e
+
+```dart
+ Future<void> Navset(BuildContext context) async {
+    if (_authis) {
+      final bool canAuthenticat = await auth.canCheckBiometrics;
+      if (canAuthenticat) {
+        final bool didauth = await auth.authenticate(
+          localizedReason: "Please enter pass",
+          options: AuthenticationOptions(
+            biometricOnly: true,
+          ),
+        );
+        _authis = didauth;
+      }
+      if(_authis)
+        {
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => HideFolderPage(),
+          ));
+        }
+      else {
+        ScaffoldMessenger.of(context)
+            .showSnackBar(SnackBar(content: Text("Password is wrong")));
+        _authis=true;
+      }
+
+    }
+    notifyListeners();
+  }
+```
+
+
+https://github.com/user-attachments/assets/a0df0366-a353-4182-a3eb-19690adb2473
+
+
 
 
 
