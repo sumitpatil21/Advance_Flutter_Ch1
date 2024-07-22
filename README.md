@@ -32,23 +32,24 @@ class BookingProvider with ChangeNotifier {
   }
 }
 ```
-## 1 State Management :
+### Provider Tree
+### 1 State Management :
 
 - State management in Flutter is crucial for building responsive and dynamic applications.
 
-## 2 State :
+### 2 State :
 
 - A state is information that can be read when the widget is built and might change or modified over a lifetime of the app.
 
-## 3 SetState :
+### 3 SetState :
 
 - Rebuild the our stateful or stateless widget build method.
 
-## 4 Provider State Management :
+### 4 Provider State Management :
 
 - Provider is a powerful state management solution in Flutter, offering a simple way to manage and share state across your application.
 
-## 5 Provider package :
+### 5 Provider package :
 
 
 dependencies:
