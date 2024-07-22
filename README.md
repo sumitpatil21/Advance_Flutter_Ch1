@@ -119,6 +119,22 @@ https://github.com/sumitpatil21/Advance_Flutter_Ch1/assets/148967002/56296965-85
 
 ### Stepper Video
 
+## Properties of Stepper Widget :
+
+- steps : List of Step objects that define each individual step in the stepper. Each Step typically contains a title and content.
+
+- currentStep : Integer that represents the current active step. This is used to control which step is currently displayed and allows users to navigate forward and backward through the steps.
+
+- onStepContinue : Callback function that is called when the user taps the "Continue" button on an active step. You typically increment the currentStep in this callback to move forward.
+
+- onStepCancel : Callback function that is called when the user taps the "Cancel" button on an active step. You typically decrement the currentStep in this callback to move backward.
+
+- onStepTapped : Callback function that is called when the user taps on a step's header. It is useful for handling custom behavior when a step is directly selected.
+
+- controlsBuilder : Optional builder function to customize the appearance of the buttons (e.g., "Next", "Back").
+
+- type : Enum that specifies the type of stepper: StepperType.vertical for a vertical layout and StepperType.horizontal (default) for a horizontal layout.
+
 
 https://github.com/user-attachments/assets/ee5f5b1c-705d-41b3-80d2-0a9ada86b038
 
