@@ -1,3 +1,10 @@
+
+## Api Fetcha  📗📗
+https://github.com/user-attachments/assets/b972b041-ef4f-4e5e-a1ff-302829050952
+
+
+https://github.com/user-attachments/assets/6708b871-e6db-4307-80cd-853360a49606
+
 # advance_flutter_ch1
 
 ## What is Provider?
@@ -13,7 +20,10 @@
 - ### ListenableProvider is the specific provider used for listenable objects. It will listen, then ask widgets depending on it and affected by the state change to rebuild any time the listener is called
 - ### ChangeNotifierProvider is similar to ListenableProvider but for ChangeNotifier objects, and calls ChangeNotifier.dispose automatically when needed
 - ### ValueListenableProvider listens to a ValueListenable and exposes the value
-- ### StreamProvider listens to a stream, exposes the latest value emitted, and asks widgets dependent on the stream to rebuild
+- ### StreamProvider listens to a stream, exposes the latest value emitted, and asks widgets 
+
+
+dependent on the stream to rebuild
 - ### FutureProvider takes a Future class and updates the widgets depending on it when the future is completed 
 ```dart
 import 'dart:ffi';
