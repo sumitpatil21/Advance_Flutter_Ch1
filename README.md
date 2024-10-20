@@ -2,6 +2,7 @@
 
 # advance_flutter_ch1
 
+
 ## What is Provider?
 #### The Provider package, created by Remi Rousselet, aims to handle the state as cleanly as possible. In Provider, widgets listen to changes in the state and update as soon as they are notified.
 ### State management with Provider
